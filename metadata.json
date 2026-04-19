@@ -1,0 +1,6 @@
+{
+  "name": "KeyMas Bercham",
+  "description": "A smart key borrowing and room booking management system.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": []
+}

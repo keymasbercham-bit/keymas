@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #006ce0;
+  --color-primary-foreground: #ffffff;
+  --color-bg-base: #F8FAFC;
+  --color-slate-50: #F8FAFC;
+  --color-slate-100: #F1F5F9;
+  --color-slate-200: #E2E8F0;
+  --color-slate-300: #CBD5E1;
+  --color-slate-400: #94A3B8;
+  --color-slate-500: #64748B;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1E293B;
+  --color-slate-900: #0F172A;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-bg-base text-slate-800 antialiased;
+  }
+}
+
+.status-pending { @apply bg-orange-50 text-orange-600 border-orange-100; }
+.status-booked { @apply bg-blue-50 text-blue-600 border-blue-100; }
+.status-inprogress { @apply bg-red-50 text-red-600 border-red-100; }
+.status-available { @apply bg-green-50 text-green-600 border-green-100; }
+.status-completed { @apply bg-slate-50 text-slate-600 border-slate-100; }
+.status-cancelled { @apply bg-slate-200 text-slate-700 border-slate-300; }
+
+.card-utility { @apply bg-white rounded-2xl border border-slate-200 shadow-sm transition-all; }
+.label-micro { @apply text-[10px] uppercase font-bold tracking-wider text-slate-400; }
+
